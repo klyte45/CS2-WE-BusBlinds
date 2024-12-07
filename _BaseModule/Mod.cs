@@ -10,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace _BaseModule
+namespace K45WE_BusBlinds
 {
     public class Mod : IMod
     {

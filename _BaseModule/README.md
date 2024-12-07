@@ -1,16 +1,11 @@
-# Model project for Write Everywhre modules mods
+# Vanilla Bus Blinds - A module for Write Everywhere
 
-This is a project to be used as starter point to any new module pack of Write Everywhere mod for Cities Skylines 2.
+This Write Everywhere module adds layouts that attach two blinds to vanilla buses, one ahead and another behind every model.
 
-## Setting up
+The content of the front blinds have source from the `GetTargetDestinationDynamic` builtin function from WE, that may be overridden by other transportation mod - Like [XTM](https://mods.paradoxplaza.com/mods/74238/Windows) will do in a near future.
 
-- Rename this project and solution to setup the DLL name this module will have.
-	- TIP: To avoid conflicts, start the project name with a acronym representing your name, example: `XYZ_MyWEModule` being XYZ the acronym that represents you.
-- Add resources at each `Resources/` subfolder as instructed locally there
-- Change csproj file details (DisplayName, ShortDescription, ForumLink, other social media links tags)
-- Setup thumbnail into `Properties/Thumbnail.png`
-- Add screenshots at `Screenshots/` folder (jpg files, optional)
-- Publish the mod using "Publish..." option in context menu of the project
-- After having a modId in Paradox Mods, setup it into the ModId parameter at csproj file
+The content of the back blinds have source from current route identifier/number, that already is customizable via XTM mod.
 
-After that, just don't forget to change the Version parameter in the csproj file if you need to upload new versions of the module!
+There are two font settings from this module: `FrontBlindFont` for front blinds and `BackBlindFont` for back blinds. You can configure the effective font to be used in both cases at the WE's window (tab Prefab Templates Setup).
+
+Font used at screenshots: [Twenty-Seven](https://www.dafont.com/twenty-seven.font)
